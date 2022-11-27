@@ -107,7 +107,7 @@ border-radius: 6px;
 h1{
   background-color: rgb(70, 64, 64);
 box-shadow: #187c57e5;
-width: 35PX;
+width: 540PX;
 
 }
 .inp{
@@ -175,7 +175,7 @@ h1 {
     box-shadow: .6em 0 0 transparent;
   }
 }
-@media screen and (max-width:1336px){
+@media screen and (max-width:750px){
   img{
     display: none;
   }
@@ -196,7 +196,7 @@ h1 {
     flex-wrap: wrap;
     width: 100%;
   }
-} @media screen and (max-height: 900px){
+} @media screen and (max-height: 1334px){
 
   form{
    
