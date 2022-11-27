@@ -23,8 +23,9 @@ width: 100%;
 height: 100vh;
 border: 1px solid rgba(0, 0, 0, 0);
 }
-aside img{
-  width: 60%;
+aside img{  
+  margin-top:  3% ;
+  width: 70%;
   height: 35%;
 
   min-width: 10%;
@@ -45,40 +46,40 @@ background: rgba(114, 113, 113, 0);
 display: flex; flex-direction: column; justify-content: center; align-items: center;
 
 width: 165%;
-height: 90%;
+height: 83%;
 
 }
-fieldset{
+form fieldset{
   color: beige;
   border-radius: 6px; border: 2px rgb(139, 139, 139) solid; 
   margin: 2%;
 
   height: 95%;
-  width: 98%;
+  width: 95%;
  
-  display: flex; flex-direction: column;  
+  display: flex; flex-direction: column;  flex-wrap: nowrap;
 
-  padding-bottom: 1.5%;
+  padding-bottom: 0%;
 
 } form{
   font-size: 18px;
   font-weight: bold;
   background-image: linear-gradient(to bottom,rgb(29, 6, 197),rgb(6, 6, 248),rgb(22, 15, 15));
 
-  height: 95%;
-  width: 90%;
+  height: 85%;
+  width: 68%;
 
   display: flex; flex-direction: column; align-items: center; justify-content: center;
 
   border-radius: 2%;
 }
 .box-header{
-background: rgba(12, 7, 100, 0.445); margin: 3%;
+
 
 display: flex; flex-direction: column; align-items: center; justify-content: center;
-font-size: 15px;
+font-size: 12px;
 
-width: 98%;
+width: 78%;
 
 color: rgb(248, 248, 248);
 
@@ -103,6 +104,12 @@ flex-direction: column;
 
 border-radius: 6px;
 }
+h1{
+  background-color: rgb(70, 64, 64);
+box-shadow: #187c57e5;
+width: 35PX;
+
+}
 .inp{
  
   color: rgb(231, 231, 231);
@@ -120,11 +127,12 @@ font-size: 18px;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.493);
  
-  margin-inline: 1%; 
+  margin-inline: 1%;  
   
-  border-radius: 2%; border: 0ch;
+  border-radius: 3%; border: 0ch;
  font-family: Georgia, 'Times New Roman', Times, serif;
- 
+
+border-top: 3px;
 }
 input::placeholder{
   color: rgb(156, 155, 154);
@@ -167,15 +175,35 @@ h1 {
     box-shadow: .6em 0 0 transparent;
   }
 }
-
-@media screen and (max-width:1300px ){
-img{
-  display:none;
-
+@media screen and (max-width:1336px){
+  .box-main{
+    width: 60%;
   
+  }
+  form{
+    width: 100%;
+    height: 100%;
+  }
+  fieldset{
+    width: 50%;
+    height: 100%;
+  }
+  h1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+} @media screen and (max-height: 900px){
+
+  form{
+   
+    height: 190%;
+  }
+  fieldset{
+  
+    height: 50%
 }
-
+body{
+height: 100%;
 }
-
-
-
+}
