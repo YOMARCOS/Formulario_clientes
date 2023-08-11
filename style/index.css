@@ -1,195 +1,114 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Trirong", serif;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../assets/Capa-praias-SC.jpg);
-  background-repeat: no-repeat;
+  padding-top: 3%;
+  background-image: url(../assets/WhatsApp\ Image\ 2022-11-16\ at\ 13.54.31.jpeg);
+  font-family: Arial, sans-serif;
+  background-color: #bfbfbf;
+  color: #333;
   background-size: cover;
-  max-height: 1330px;
-}
-
-img:hover {
-  transform: scale(1.3);
-  transition: 0.5s;
+  background-repeat: no-repeat;
 }
 
 .box-main {
-  margin-top: 25px;
-  margin: 2%;
-  max-width: px;
-  min-width: 300px;
-  background: rgba(153, 34, 34, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
-  background: #f9c10a;
-  font-size: 25px;
-  margin-bottom: 15px;
-  margin-left: 2px;
-  width: 65%;
-  padding: 1% 2%;
-  border-radius: 6px;
-}
-
-
-
-form {
-  font-size: 18px;
-  font-weight: bold;
-  background-image: radial-gradient(
-    rgb(164, 164, 164),
-    rgb(122, 122, 122),
-    rgb(100, 100, 100)
-  );
-  height: 95%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2%;
-}
-
 
 .input-group {
-  margin: 15px 0; /* Ajuste a margem vertical aqui */
-  color: azure;
-  margin-inline: 2%;
-  background: rgba(100, 87, 87, 0);
-  display: flex;
-  flex-direction: column; justify-content: center; align-items: start;
-  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .inp {
-  color: rgb(231, 231, 231);
-  font-size: 18px;
-  background: none;
-  margin: 5px 1%; /* Ajuste a margem vertical e horizontal aqui */
-  border: 0;
-  border-bottom: 1px black solid;
-  transition: transform 0.1s;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease-in-out;
 }
 
-button{
+.inp:focus {
+  border-color: #007bff;
+}
+
+.select-group select {
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20d%3D%22M11.293%201.293a1%201%200%200%200-1.414%200L6%205.586%201.707%201.293A1%201%200%200%200%.293%202.707l4%204a1%201%200%200%200%201.414%200l4-4a1%201%200%200%200%200-1.414z%22%20fill%3D%22%23212121%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
   cursor: pointer;
-  padding: 5%; 
-  font-weight: bold;
-  background-color: rgba(13, 230, 60, 0.493);
-  margin-inline: 1%; margin-bottom: 5%;
-  border-radius: 10px;
-  border: 0ch;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  border-top: 3px;
+  transition: border-color 0.3s ease-in-out;
 }
 
-input::placeholder {
-  color: rgb(156, 155, 154);
+.select-group select:focus {
+  border-color: #007bff;
 }
 
-option {
-  color: black;
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#submit:hover {
-  background: rgb(123, 209, 224);
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
-.inp:hover {
-  transform: scale(1.05);
+.box-footer {
+  text-align: center;
+  margin-top: 20px;
 }
 
-footer a {
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.box-footer img {
+  width: 40px;
+  height: 40px;
+}
+/* Adicione isso ao seu arquivo de estilos CSS */
+.whatsapp-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #07ff28;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
 }
 
-a img {
-  width: 80%;
+.whatsapp-icon:hover {
+  background-color: #038e2d;
 }
 
-@keyframes type {
-  0% {
-    width: 0;
-  }
-}
-
-@keyframes caret {
-  50% {
-    box-shadow: 0.6em 0 0 transparent;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .box-main {
-    width: 80%;
-  }
-  form {
-    width: 100%;
-    height: 100%;
-  }
-
-  h1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-
-@media screen and (max-height: 1334px) {
-  form {
-    height: 190%;
-  }
-
-  body {
-    height: 100%;
-  }
-}
-
-/* Paleta de Cores Tropical */
-:root {
-  --color-primary: #ffcc29;
-  --color-secondary: #ff6c3a;
-  --color-tertiary: #00a86b;
-  --color-text: #ffffff;
-  --color-background: rgba(13, 13, 13, 0.8);
-}
-
-body {
-  background-color: var(--color-background);
-}
-
-h1,
-input,
-
-option {
-  color: var(--color-background);
-}
-legend{
-  color: aliceblue;
-  margin-top: 3%;
-}
-
-
-
-#submit:hover {
-  background-color: var(--color-tertiary);
-}
